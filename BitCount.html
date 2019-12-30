@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BitCount</title>
+
+	<script type="text/javascript">
+		function countBits(n) {
+			console.log(n);
+  			let x = parseInt(n, 10).toString(2);
+  			console.log(x);
+  			let j = 0;
+  			for (var i = 0; i <= x.length; i++) {
+  				if(x[i] == 1){
+  					j++;
+  				}
+  			}
+  			return j;
+		};
+
+		console.log(countBits(109));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
