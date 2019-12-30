@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function sumDigPow(a, b) {
+			var vetor = new Array();
+			var vetor2 = new Array();
+			var x = 0;
+			var z = 0;
+			for (var i = a; i <= b; i++) {
+				console.log("entrou for");
+				z = 0;
+				var string = i.toString();
+				vetor = string.split("");
+				console.log(vetor);
+				for (var j = 0; j <= vetor.length - 1; j++) {
+					console.log("entrou for2");
+					z = z + Math.pow(vetor[j], (j+1));
+					console.log(Math.pow(vetor[j], (j+1)));
+					console.log(z);
+					console.log("passou pow");
+				}
+				console.log(z);
+				console.log(i);
+				if (z == i) {
+					vetor2.push(z);
+				}
+			}
+			return vetor2;
+		}
+
+		console.log(sumDigPow(80, 150));
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
